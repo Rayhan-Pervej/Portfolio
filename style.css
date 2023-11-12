@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000vh;
+}
+
+/* Nav bar */
+.navbar{
+    background: rgba(22, 41, 35, 0.979)
+}
+.navbar i{
+    color: white;
+}
+.navbar a{
+    color: white;
+    position: relative;
+}
+
+.navbar a:hover, nav a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:active, nav a:focus {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .nav-link::after{
+    content:'';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.navbar .nav-link:hover:after{
+    width: 100%;
+    
+}
+
+
+/* banner */
+
+ .banner{
+    background-color: rgba(127, 255, 212, 0.459);
+    width: 100%;
+    
+ }
+ .banner .col{
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;  
+ }
+
+ .myself{
+    border: 2px solid violet;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    
+ }
+
+ /* about me */
+
+ .about{
+    background-color: rgba(127, 236, 255, 0.575);
+ }
+
+ .about a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ }
+
+ /* education */
+
+ .edu-content{
+    
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 0 4px 4px 0;
+    border-left: 4px solid rgb(0, 0, 0);
+ }
+
+ .edu-content .time .event{
+    list-style: none;
+    margin: 2rem 3rem;
+    word-wrap: break-word;
+    position: relative;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.692);
+ }
+
+ .edu-content .time .event:after{
+    box-shadow: 0 0 0 4px #252323d7;
+    left: -3.65rem;
+    background: #000000;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    content: "";
+    top: 5px;
+    position: absolute;
+    display: block;
+}
+
+
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) { }
+
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }

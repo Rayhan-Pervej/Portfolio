@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 1000vh;
+    
 }
 
 /* Nav bar */
@@ -108,11 +108,96 @@ body{
 }
 
 
+/* Activities */
+
+#activity {
+    background-color: rgba(23, 252, 38, 0.253);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.activityHeader{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.activityImg{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+.carousel-caption p{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+
+/* contact form */
+.contact{
+    padding: 2rem 0 1rem 0;
+    background-color: rgba(145, 255, 0, 0.205);
+}
+.contact h3{
+    text-align: center;
+}
+.contactForm{
+    
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contactForm input, #comment{
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 3px;
+    background-color: #bebebe7a;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.contactForm #submit{
+    background-color: #0408e8a8;
+    border-radius: 1rem;
+    width: 30%;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.contactForm #submit:hover {
+    background-color: #0408e8c7;
+}
+
+/* Social Media */
+
+
+.socialmedia{
+    background-color: rgba(6, 22, 1, 0.87);
+
+    padding: 1rem;
+    text-align: center;
+}
+
+.socialmedia .iconContainer {
+    display: inline-block; 
+    border-radius: 50%; 
+    background-color: rgb(216, 255, 224); 
+    padding: 10px; 
+    margin: 5px;
+}
+
+.socialmedia img {
+    display: block; 
+}
 
 @media (min-width: 576px) {  }
-
-
-@media (min-width: 768px) { }
 
 
 @media (min-width: 992px) { }

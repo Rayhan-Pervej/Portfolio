@@ -232,17 +232,22 @@
         </div>
     </section>
 
+    
+
     <!-- Footer -->
 
     <section class="contact" id="contact">
         <h3> Contact Me</h3>
-        <form class="contactForm" action="#" method="POST">
-            <input type="text" placeholder="Name">
-            <input type="text" name="" placeholder="Enter Email" required>
+        <form class="contactForm" action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="email" placeholder="Enter Email" required>
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your messages" required></textarea>
             <input type="submit" id="submit" value="Submit">
         </form>
+        
     </section>
+
+   
 
     <section class="socialmedia">
         <div class="iconContainer">
@@ -264,3 +269,4 @@
 </body>
 
 </html>
+

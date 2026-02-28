@@ -108,7 +108,7 @@ export default function Contact() {
             <div className="glass border border-white/7 rounded-2xl p-6 mb-6">
               <h3 className="font-bold text-white text-lg mb-2">Get in touch</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Available for <span className="text-purple-400 font-medium">fixed projects</span> &amp; <span className="text-cyan-400 font-medium">freelance work</span> — bring your idea, I&apos;ll bring the code.
+                Available for <span className="text-purple-400 font-medium">fixed projects</span> &amp; <span className="text-cyan-400 font-medium">freelance work</span> — bring your idea, I&apos;ll bring the solution.
               </p>
             </div>
 

@@ -21,11 +21,23 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [showAvatar, setShowAvatar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const hero = document.querySelector('#home');
+    if (!hero) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowAvatar(!entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    observer.observe(hero);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -66,10 +78,13 @@ export default function Navbar() {
         )}
       >
         <div className="container-custom flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo — always takes up space, only visible after scrolling past hero */}
           <button
             onClick={() => handleNavClick('#home')}
-            className="w-9 h-9 rounded-full overflow-hidden ring-2 ring-primary-500/50 hover:ring-primary-500 transition-all flex-shrink-0"
+            className={cn(
+              'w-9 h-9 rounded-full overflow-hidden ring-2 ring-primary-500/50 hover:ring-primary-500 transition-all duration-300 flex-shrink-0',
+              showAvatar ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'
+            )}
           >
             <Image
               src="/images/profile/profile.png"

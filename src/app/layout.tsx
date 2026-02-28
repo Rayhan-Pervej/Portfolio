@@ -10,6 +10,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/images/fabicon/favicon.ico',
+  },
   title: 'Rayhan Pervej – Software Engineer',
   description:
     'Portfolio of Rayhan Pervej, Junior Solution Developer at Shadhin Lab LLC. Specializing in Flutter, Python, AI/LLM, and RAG systems.',

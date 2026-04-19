@@ -50,6 +50,8 @@ export const skills: Skill[] = [
   { name: 'AWS Bedrock', category: 'ai' },
   { name: 'OpenAI API', category: 'ai' },
   { name: 'Google Gemini', category: 'ai' },
+  { name: 'Groq', category: 'ai' },
+  { name: 'Voyage AI', category: 'ai' },
   { name: 'Prompt Engineering', category: 'ai' },
   { name: 'Agentic Workflows', category: 'ai' },
   { name: 'FAISS', category: 'ai' },
@@ -115,9 +117,9 @@ export const projects: Project[] = [
   {
     title: 'ChatIUB',
     description:
-      'AI-powered campus knowledge assistant exclusively for IUB students. Features hybrid RAG retrieval (FAISS dense + BM25 sparse + RRF fusion), LLM-based query rewriting, JWT auth with email verification, real-time streaming via WebSockets, and automated data ingestion via Celery. Built full stack — Next.js frontend + Python/Flask backend powered by AWS Bedrock (Claude 3.5 Sonnet) with Supabase PostgreSQL.',
+      'AI-powered campus knowledge assistant exclusively for IUB students. Features hybrid RAG retrieval (dense + BM25 sparse + RRF fusion), LLM-based query rewriting, JWT auth with email verification, real-time streaming via WebSockets, and automated data ingestion via Celery. Built full stack — Next.js frontend + Python/Flask backend with Voyage AI embeddings, Gemini (Groq fallback) as LLM, and Supabase PostgreSQL.',
     image: '/images/projects/chatIUB.png',
-    tags: ['Python', 'Flask', 'AWS Bedrock', 'FAISS', 'BM25', 'RAG', 'Next.js', 'Supabase', 'Celery', 'Redis'],
+    tags: ['Python', 'Flask', 'Gemini', 'Groq', 'Voyage AI', 'BM25', 'RAG', 'Next.js', 'Supabase', 'Celery', 'Redis'],
     liveUrl: 'https://chatiub.vercel.app/',
     githubUrl: 'https://github.com/Rayhan-Pervej',
     featured: true,

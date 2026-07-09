@@ -131,7 +131,7 @@ export const projects: Project[] = [
     image: '/images/projects/vashasikho.png',
     tags: ['Next.js', 'TypeScript', 'Spaced Repetition', 'IELTS', 'Education'],
     liveUrl: 'https://vashasikho.vercel.app/',
-    featured: true,
+    featured: false,
   },
   {
     title: 'AQI Prediction – LSTM / GRU / CNN',

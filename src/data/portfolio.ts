@@ -125,6 +125,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'Vasha Sikho – IELTS Vocabulary App',
+    description:
+      'Vocabulary learning platform for IELTS Academic exam prep. Features spaced repetition, quiz-based lessons with 10 random IELTS words per session, Bangla meanings, a 391-word library, progress tracking with streaks and XP, bookmarks, and a statistics dashboard — built with Next.js.',
+    image: '/images/projects/vashasikho.png',
+    tags: ['Next.js', 'TypeScript', 'Spaced Repetition', 'IELTS', 'Education'],
+    liveUrl: 'https://vashasikho.vercel.app/',
+    featured: true,
+  },
+  {
     title: 'AQI Prediction – LSTM / GRU / CNN',
     description:
       'Deep learning models predicting hourly Air Quality Index (AQI) for Dhaka using 7 years of historical data. Compares LSTM, GRU, and 1D-CNN architectures with 24-hour sliding windows and advanced training callbacks.',
@@ -142,15 +151,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Rayhan-Pervej/kisukinen',
     featured: false,
   },
-  {
-    title: 'Halal Media – Streaming Platform',
-    description:
-      'Cross-platform video streaming app for culturally curated content, built with Flutter. Supports iOS and Android with native platform integrations, asset management, and content delivery.',
-    image: '/images/projects/halal-media.png',
-    tags: ['Flutter', 'Dart', 'Streaming', 'iOS', 'Android'],
-    githubUrl: 'https://github.com/Rayhan-Pervej/Halal-Media',
-    featured: false,
-  },
+
 ];
 
 export const education: Education[] = [

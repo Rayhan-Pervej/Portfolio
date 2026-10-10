@@ -148,7 +148,6 @@ export const projects: Project[] = [
       'Translates a whole folder of Japanese documents into English and keeps the folder structure and file formats. Handles PDF, Excel, Word, CSV, TXT and Markdown, estimates the cost before any API call, and validates and retries every batch.',
     image: null,
     tags: ['Python', 'AWS Bedrock', 'Claude', 'Document AI', 'Structured Output'],
-    githubUrl: 'https://github.com/Rayhan-Pervej/doc-translator',
     featured: false,
   },
   {

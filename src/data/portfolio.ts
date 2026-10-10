@@ -125,6 +125,33 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'n8n AI Workflows – WhatsApp Automation',
+    description:
+      'Two self-hosted n8n automations that put an LLM between business tools and WhatsApp. One turns Fathom meeting transcripts into formatted PDF minutes and sends them to a chat. The other creates tasks from group messages, maps mentions to users, and messages each assignee with the deadline and a link.',
+    image: null,
+    tags: ['n8n', 'AWS Bedrock', 'WhatsApp', 'Evolution API', 'Automation', 'LLM'],
+    githubUrl: 'https://github.com/Rayhan-Pervej/n8n-ai-workflows',
+    featured: false,
+  },
+  {
+    title: 'DrawLearn – AI Whiteboard Tutor',
+    description:
+      'Teaches a problem again on an animated whiteboard. Give it a photo or a typed question, and Claude on Amazon Bedrock plans the lesson, then writes, sketches and narrates each step while SymPy checks the math. Shows token usage and estimated cost after every request.',
+    image: null,
+    tags: ['Python', 'AWS Bedrock', 'Flask', 'Streamlit', 'SymPy', 'Education'],
+    githubUrl: 'https://github.com/Rayhan-Pervej/DrawLearn',
+    featured: false,
+  },
+  {
+    title: 'Doc Translator – Japanese to English',
+    description:
+      'Translates a whole folder of Japanese documents into English and keeps the folder structure and file formats. Handles PDF, Excel, Word, CSV, TXT and Markdown, estimates the cost before any API call, and validates and retries every batch.',
+    image: null,
+    tags: ['Python', 'AWS Bedrock', 'Claude', 'Document AI', 'Structured Output'],
+    githubUrl: 'https://github.com/Rayhan-Pervej/doc-translator',
+    featured: false,
+  },
+  {
     title: 'Vasha Sikho – IELTS Vocabulary App',
     description:
       'Vocabulary learning platform for IELTS Academic exam prep. Features spaced repetition, quiz-based lessons with 10 random IELTS words per session, Bangla meanings, a 391-word library, progress tracking with streaks and XP, bookmarks, and a statistics dashboard — built with Next.js.',

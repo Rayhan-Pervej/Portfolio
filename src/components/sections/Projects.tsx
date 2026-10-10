@@ -57,7 +57,7 @@ export default function Projects() {
           <SectionHeading
             label="Projects"
             title="What I've Built"
-            description="From AI chatbots to mobile apps — projects that solve real problems."
+            description="From AI chatbots and n8n automations to mobile apps — projects that solve real problems."
           />
         </AnimatedSection>
 

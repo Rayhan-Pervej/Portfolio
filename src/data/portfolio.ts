@@ -125,6 +125,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'GymFlow – Gym Management SaaS',
+    description:
+      'Multi-branch gym management platform built for gyms in Bangladesh. Members and renewals, payments with dues and receipts, SMS reminders, check-in, personal training, a built-in shop, and reports across branches. Role-based access for owner, manager, staff and trainer, in Bangla and English with dark and light themes. React and TypeScript on a Django REST API.',
+    image: '/images/projects/gymflow.png',
+    tags: ['React', 'TypeScript', 'Django', 'Multi-tenant SaaS', 'Tailwind CSS', 'PostgreSQL', 'i18n', 'Role-based Access'],
+    featured: false,
+  },
+  {
     title: 'n8n AI Workflows – WhatsApp Automation',
     description:
       'Two self-hosted n8n automations that put an LLM between business tools and WhatsApp. One turns Fathom meeting transcripts into formatted PDF minutes and sends them to a chat. The other creates tasks from group messages, maps mentions to users, and messages each assignee with the deadline and a link.',

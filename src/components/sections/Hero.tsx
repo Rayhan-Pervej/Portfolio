@@ -105,9 +105,9 @@ export default function Hero() {
               transition={{ repeat: Infinity, duration: 3, delay: 0.5 }}
               className="hidden sm:block absolute -top-4 -left-8 glass border border-white/10 rounded-xl px-3 py-2 text-xs font-medium"
             >
-              <span className="text-primary-400">Flutter</span>
+              <span className="text-primary-400">Full Stack</span>
               <span className="text-gray-500"> + </span>
-              <span className="text-accent-400">AI/LLM</span>
+              <span className="text-accent-400">GenAI</span>
             </motion.div>
 
             <motion.div

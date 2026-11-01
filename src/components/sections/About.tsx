@@ -21,7 +21,7 @@ export default function About() {
           <SectionHeading
             label="About Me"
             title="Who I Am"
-            description="A passionate developer who loves building things that matter."
+            description="The engineer behind the projects."
           />
         </AnimatedSection>
 
@@ -63,7 +63,7 @@ export default function About() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                  Building the Future with{' '}
+                  Building Full-Stack Products with{' '}
                   <span className="gradient-text">Code & AI</span>
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-base sm:text-lg">
@@ -72,9 +72,10 @@ export default function About() {
               </div>
 
               <p className="text-gray-400 leading-relaxed">
-                I apply clean architecture principles to deliver maintainable Flutter and
-                backend systems in collaborative environments. Currently exploring the
-                frontier of Agentic AI and RAG-based systems.
+                I like owning a product end to end: backend APIs and data models first,
+                then a clean frontend on top. I enjoy turning messy real-world workflows
+                into reliable software, from multi-branch SaaS to LLM-powered tools.
+                Earlier in my career I shipped production Flutter apps.
               </p>
 
               {/* Contact chips */}

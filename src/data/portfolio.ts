@@ -2,10 +2,10 @@ import type { Skill, Experience, Project, Education, Publication, Award } from '
 
 export const personalInfo = {
   name: 'Rayhan Pervej',
-  role: 'Software Engineer',
-  roles: ['Software Engineer', 'Flutter Developer', 'AI/LLM Engineer', 'GenAI Builder'],
-  tagline: 'Building AI-Powered Mobile & Backend Solutions',
-  bio: 'Junior Solution Developer at Shadhin Lab LLC with hands-on experience building production-ready Flutter applications and GenAI backend systems. I specialize in API-driven mobile apps, autonomous AI agents, and RAG-based chatbot platforms for real-world use cases.',
+  role: 'Full Stack & GenAI Engineer',
+  roles: ['Full Stack Engineer', 'GenAI & Agentic AI Engineer', 'Backend Engineer', 'LLM Engineer'],
+  tagline: 'Building Full-Stack Products & Agentic AI Systems',
+  bio: 'Junior Solution Developer at Shadhin Lab LLC. A full stack engineer with a strong backend foundation in Python, Django and Flask, and frontends built in React and Next.js with AI-assisted workflows. I design agentic AI systems and RAG chatbots, and have worked on LLM-based classification and supervised learning. I also bring production Flutter experience from earlier projects.',
   email: 'rayhanpervej12@gmail.com',
   linkedin: 'https://linkedin.com/in/rayhanpervej',
   github: 'https://github.com/Rayhan-Pervej',
@@ -24,28 +24,31 @@ export const stats = [
 ];
 
 export const skills: Skill[] = [
-  // Mobile
-  { name: 'Flutter', category: 'mobile' },
-  { name: 'Dart', category: 'mobile' },
-  { name: 'BLoC', category: 'mobile' },
-  { name: 'Provider', category: 'mobile' },
-  { name: 'MVP', category: 'mobile' },
-  { name: 'SOLID', category: 'mobile' },
-  { name: 'GoRouter', category: 'mobile' },
-  { name: 'Dio', category: 'mobile' },
   // Backend
   { name: 'Python', category: 'backend' },
+  { name: 'Django', category: 'backend' },
+  { name: 'Django REST Framework', category: 'backend' },
   { name: 'Flask', category: 'backend' },
   { name: 'REST APIs', category: 'backend' },
+  { name: 'JWT Auth', category: 'backend' },
   { name: 'Flask-SocketIO', category: 'backend' },
   { name: 'SQLAlchemy', category: 'backend' },
   { name: 'Celery', category: 'backend' },
   { name: 'Boto3', category: 'backend' },
   { name: 'Gunicorn', category: 'backend' },
   { name: 'PyMuPDF', category: 'backend' },
+  // Frontend
+  { name: 'React', category: 'frontend' },
+  { name: 'Next.js', category: 'frontend' },
+  { name: 'TypeScript', category: 'frontend' },
+  { name: 'Tailwind CSS', category: 'frontend' },
+  { name: 'TanStack Query', category: 'frontend' },
+  { name: 'i18n', category: 'frontend' },
+  { name: 'AI-Assisted Development', category: 'frontend' },
   // AI / LLM
-  { name: 'LangChain', category: 'ai' },
+  { name: 'Agentic Workflows', category: 'ai' },
   { name: 'LangGraph', category: 'ai' },
+  { name: 'LangChain', category: 'ai' },
   { name: 'RAG', category: 'ai' },
   { name: 'AWS Bedrock', category: 'ai' },
   { name: 'OpenAI API', category: 'ai' },
@@ -53,19 +56,26 @@ export const skills: Skill[] = [
   { name: 'Groq', category: 'ai' },
   { name: 'Voyage AI', category: 'ai' },
   { name: 'Prompt Engineering', category: 'ai' },
-  { name: 'Agentic Workflows', category: 'ai' },
+  { name: 'LLM Classification', category: 'ai' },
+  { name: 'Supervised Learning', category: 'ai' },
+  { name: 'TensorFlow', category: 'ai' },
   { name: 'FAISS', category: 'ai' },
   { name: 'BM25', category: 'ai' },
   { name: 'ChromaDB', category: 'ai' },
-  // Tools
+  // Databases & tools
   { name: 'Git & GitHub', category: 'tools' },
-  { name: 'Firebase', category: 'tools' },
-  { name: 'MongoDB', category: 'tools' },
-  { name: 'MySQL', category: 'tools' },
   { name: 'PostgreSQL', category: 'tools' },
+  { name: 'MySQL', category: 'tools' },
+  { name: 'MongoDB', category: 'tools' },
   { name: 'Redis', category: 'tools' },
   { name: 'Supabase', category: 'tools' },
+  { name: 'Firebase', category: 'tools' },
   { name: 'Pytest', category: 'tools' },
+  // Mobile (earlier work)
+  { name: 'Flutter', category: 'mobile' },
+  { name: 'Dart', category: 'mobile' },
+  { name: 'BLoC', category: 'mobile' },
+  { name: 'Provider', category: 'mobile' },
 ];
 
 export const experiences: Experience[] = [
@@ -133,15 +143,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    title: 'n8n AI Workflows – WhatsApp Automation',
-    description:
-      'Two self-hosted n8n automations that put an LLM between business tools and WhatsApp. One turns Fathom meeting transcripts into formatted PDF minutes and sends them to a chat. The other creates tasks from group messages, maps mentions to users, and messages each assignee with the deadline and a link.',
-    image: null,
-    tags: ['n8n', 'AWS Bedrock', 'WhatsApp', 'Evolution API', 'Automation', 'LLM'],
-    githubUrl: 'https://github.com/Rayhan-Pervej/n8n-ai-workflows',
-    featured: false,
-  },
-  {
     title: 'DrawLearn – AI Whiteboard Tutor',
     description:
       'Teaches a problem again on an animated whiteboard. Give it a photo or a typed question, and Claude on Amazon Bedrock plans the lesson, then writes, sketches and narrates each step while SymPy checks the math. Shows token usage and estimated cost after every request.',
@@ -156,6 +157,15 @@ export const projects: Project[] = [
       'Translates a whole folder of Japanese documents into English and keeps the folder structure and file formats. Handles PDF, Excel, Word, CSV, TXT and Markdown, estimates the cost before any API call, and validates and retries every batch.',
     image: null,
     tags: ['Python', 'AWS Bedrock', 'Claude', 'Document AI', 'Structured Output'],
+    featured: false,
+  },
+  {
+    title: 'n8n AI Workflows – WhatsApp Automation',
+    description:
+      'Two self-hosted n8n automations that put an LLM between business tools and WhatsApp. One turns Fathom meeting transcripts into formatted PDF minutes and sends them to a chat. The other creates tasks from group messages, maps mentions to users, and messages each assignee with the deadline and a link.',
+    image: null,
+    tags: ['n8n', 'AWS Bedrock', 'WhatsApp', 'Evolution API', 'Automation', 'LLM'],
+    githubUrl: 'https://github.com/Rayhan-Pervej/n8n-ai-workflows',
     featured: false,
   },
   {

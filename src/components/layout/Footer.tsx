@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <p className="text-2xl font-bold gradient-text mb-1">Rayhan Pervej</p>
-          <p className="text-sm text-gray-500">Software Engineer · Flutter · AI/LLM</p>
+          <p className="text-sm text-gray-500">Full Stack Engineer · GenAI · Backend</p>
         </div>
 
         <div className="flex items-center gap-4">

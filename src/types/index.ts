@@ -1,6 +1,6 @@
 export interface Skill {
   name: string;
-  category: 'mobile' | 'backend' | 'ai' | 'tools';
+  category: 'backend' | 'frontend' | 'ai' | 'tools' | 'mobile';
 }
 
 export interface ExperienceProject {

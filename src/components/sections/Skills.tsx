@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Smartphone, Server, Brain, Wrench } from 'lucide-react';
+import { Smartphone, Server, Monitor, Brain, Wrench } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -9,15 +9,6 @@ import { skills } from '@/data/portfolio';
 import type { Skill } from '@/types';
 
 const categories = [
-  {
-    key: 'mobile' as const,
-    label: 'Mobile Development',
-    icon: Smartphone,
-    color: 'text-purple-400',
-    borderColor: 'border-purple-500/30',
-    badgeColor: 'bg-purple-500/10 text-purple-300 border-purple-500/30',
-    glowColor: 'group-hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]',
-  },
   {
     key: 'backend' as const,
     label: 'Backend & APIs',
@@ -28,8 +19,17 @@ const categories = [
     glowColor: 'group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]',
   },
   {
+    key: 'frontend' as const,
+    label: 'Frontend (AI-assisted)',
+    icon: Monitor,
+    color: 'text-emerald-400',
+    borderColor: 'border-emerald-500/30',
+    badgeColor: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
+    glowColor: 'group-hover:shadow-[0_0_30px_rgba(52,211,153,0.15)]',
+  },
+  {
     key: 'ai' as const,
-    label: 'AI / LLM / GenAI',
+    label: 'GenAI, Agents & ML',
     icon: Brain,
     color: 'text-cyan-400',
     borderColor: 'border-cyan-500/30',
@@ -70,8 +70,8 @@ export default function Skills() {
         <AnimatedSection>
           <SectionHeading
             label="Technical Skills"
-            title="My Tech Stack"
-            description="Technologies I use to build mobile apps, backend systems, and AI-powered solutions."
+            title="What I Can Build"
+            description="Full-stack products with a strong backend, AI-assisted frontends, and agentic AI systems."
           />
         </AnimatedSection>
 
@@ -111,14 +111,32 @@ export default function Skills() {
           })}
         </div>
 
+        {/* Earlier work: mobile */}
+        <AnimatedSection delay={0.35} className="mt-6">
+          <div className="glass rounded-2xl border border-white/5 px-5 py-4 flex flex-wrap items-center gap-3">
+            <Smartphone size={16} className="text-gray-500" />
+            <span className="text-sm text-gray-500 font-medium">Earlier work: mobile</span>
+            {skills
+              .filter((s) => s.category === 'mobile')
+              .map((skill) => (
+                <span
+                  key={skill.name}
+                  className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border bg-gray-500/10 text-gray-400 border-gray-500/25"
+                >
+                  {skill.name}
+                </span>
+              ))}
+          </div>
+        </AnimatedSection>
+
         {/* Bottom languages strip */}
-        <AnimatedSection delay={0.4} className="mt-8">
+        <AnimatedSection delay={0.4} className="mt-6">
           <GlassCard hover={false} className="text-center">
             <p className="text-sm text-gray-500 mb-4 font-medium uppercase tracking-widest">
               Programming Languages
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-gray-300">
-              {['Python', 'Dart', 'JavaScript', 'C++'].map((lang) => (
+              {['Python', 'TypeScript', 'JavaScript', 'Dart', 'C++'].map((lang) => (
                 <span key={lang} className="font-semibold text-lg hover:gradient-text transition-all cursor-default">
                   {lang}
                 </span>

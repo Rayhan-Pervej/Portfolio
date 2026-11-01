@@ -16,13 +16,13 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Skills />
-        <Experience />
         <Projects />
+        <Experience />
         <Education />
         <Publications />
         <Awards />
+        <About />
         <Contact />
       </main>
       <Footer />

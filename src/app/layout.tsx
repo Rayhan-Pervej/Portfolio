@@ -13,13 +13,18 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/fabicon/favicon.ico',
   },
-  title: 'Rayhan Pervej – Software Engineer',
+  title: 'Rayhan Pervej – Full Stack & GenAI Engineer',
   description:
-    'Portfolio of Rayhan Pervej, Junior Solution Developer at Shadhin Lab LLC. Specializing in Flutter, Python, AI/LLM, and RAG systems.',
+    'Portfolio of Rayhan Pervej, Junior Solution Developer at Shadhin Lab LLC. Full stack engineer building backend APIs, React and Next.js apps, agentic AI systems and RAG chatbots.',
   keywords: [
-    'Flutter Developer',
+    'Full Stack Engineer',
+    'Backend Developer',
     'Python',
-    'AI Engineer',
+    'Django',
+    'Next.js',
+    'GenAI Engineer',
+    'Agentic AI',
+    'LLM',
     'LangChain',
     'RAG',
     'Software Engineer',
@@ -29,8 +34,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Rayhan Pervej', url: 'https://github.com/Rayhan-Pervej' }],
   openGraph: {
-    title: 'Rayhan Pervej – Software Engineer',
-    description: 'Flutter & AI/LLM Developer Portfolio',
+    title: 'Rayhan Pervej – Full Stack & GenAI Engineer',
+    description: 'Full stack and GenAI engineer portfolio: backend, Next.js, agentic AI and LLM systems',
     type: 'website',
   },
   robots: {

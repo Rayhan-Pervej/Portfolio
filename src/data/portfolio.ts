@@ -176,16 +176,6 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Rayhan-Pervej/AQI-Prediction-LSTM-GRU-CNN',
     featured: false,
   },
-  {
-    title: 'Kisukinen – E-Commerce App',
-    description:
-      'Full-featured cross-platform e-commerce mobile app built with Flutter and Firebase. Includes user auth, product catalog, shopping cart, and profile management — powered by GetX state management.',
-    image: '/images/projects/kisukinen.png',
-    tags: ['Flutter', 'Dart', 'Firebase', 'GetX', 'E-Commerce'],
-    githubUrl: 'https://github.com/Rayhan-Pervej/kisukinen',
-    featured: false,
-  },
-
 ];
 
 export const education: Education[] = [
